@@ -1,5 +1,7 @@
+import "./Reset.css";
 import "./App.css";
 import axios from "axios";
+import Story from "./Story";
 import { useEffect, useState } from "react";
 
 const App = () => {
@@ -38,23 +40,22 @@ const App = () => {
   // If there is stories to be shown, this renders
   if (stories.length > 0) {
     return (
-      <div>
+      <main>
         <h1>Top stories</h1>
         <div>
-          <ul>
-            {stories.map((story) => {
-              return <li key={story.id}>{story.title}</li>;
-            })}
-          </ul>
+          {stories.map((story) => {
+            return <Story story={story} key={story.id} />;
+          })}
         </div>
-      </div>
+      </main>
     );
   }
   // If not, this renders
   return (
-    <div>
-      <p>loading data, please stand by</p>
-    </div>
+    <main>
+      <h1>Orange page</h1>
+      <h2>loading data, please stand by</h2>
+    </main>
   );
 };
 
