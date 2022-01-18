@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import User from "./User";
+
 const Story = ({ story }) => {
   let date = new Date(story.time * 1000);
 
@@ -5,7 +8,9 @@ const Story = ({ story }) => {
   return (
     <div className="Story">
       <h2>{story.title}</h2>
-      <p>By {story.by}</p>
+      <Link to={`/user/${story.by}`}>
+        <p>{story.by}</p>
+      </Link>
       <p>Score: {story.score}</p>
       <a href={story.url} target="_blank" rel="noreferrer">
         {story.url}
