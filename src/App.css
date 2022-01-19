@@ -43,6 +43,7 @@ p {
 
 a {
   text-decoration: none;
+  word-wrap: break-word; /* Fix wrapping of long links on mobile */
 }
 
 a:hover {
