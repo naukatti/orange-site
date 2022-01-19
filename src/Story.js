@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import User from "./User";
 
 const Story = ({ story }) => {
   let date = new Date(story.time * 1000);
@@ -8,14 +7,16 @@ const Story = ({ story }) => {
   return (
     <div className="Story">
       <h2>{story.title}</h2>
-      <Link to={`/user/${story.by}`}>
-        <p>{story.by}</p>
-      </Link>
+      <p>
+        <Link to={`/user/${story.by}`}>{story.by}</Link>
+      </p>
       <p>Score: {story.score}</p>
-      <a href={story.url} target="_blank" rel="noreferrer">
-        {story.url}
-      </a>
-      <p>{date}</p>
+      <p>
+        <a href={story.url} target="_blank" rel="noreferrer">
+          {story.url}
+        </a>
+      </p>
+      <p>Posted at: {date}</p>
     </div>
   );
 };

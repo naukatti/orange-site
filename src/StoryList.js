@@ -1,4 +1,3 @@
-import { Link, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Story from "./Story";
 import { useEffect, useState } from "react";
@@ -40,7 +39,7 @@ const StoryList = () => {
   if (stories.length > 0) {
     return (
       <>
-        <h1>Top stories</h1>
+        <h2>Top stories</h2>
         <div>
           {stories.map((story) => {
             return <Story story={story} key={story.id} />;
