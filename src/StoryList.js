@@ -11,7 +11,7 @@ const StoryList = () => {
     axios
       .get("https://hacker-news.firebaseio.com/v0/beststories.json")
       .then((response) => {
-        let storyIds = response.data.slice(0, 3);
+        let storyIds = response.data.slice(0, 19);
         console.log("response got");
 
         // getting all of the best stories data
