@@ -2,7 +2,7 @@
 
 This app displays the 20 top stories from Hacker News. You can also click on the creator of that post to see additonal user information.
 
-App is deployed at <https://orange-site.naukatti.com/>
+App is deployed at <http://orange-site.naukatti.com/>
 
 ## Usage
 
