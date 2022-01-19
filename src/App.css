@@ -2,7 +2,7 @@
 
 body {
   font-size: 12pt;
-  background-color: #e6e6ff;
+  background-color: #efefff;
 }
 
 main {
@@ -35,17 +35,19 @@ p {
 }
 
 .Story {
-  background-color: #a1a1da;
+  background-color: #d9d9ff;
   margin: 2rem 0;
   padding: 1rem;
   border-radius: 0.5rem;
 }
 
 a {
+  color: #3b3b84;
   text-decoration: none;
   word-wrap: break-word; /* Fix wrapping of long links on mobile */
 }
 
 a:hover {
+  color: black;
   background-color: #fff;
 }
